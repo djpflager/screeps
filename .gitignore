@@ -1,0 +1,3 @@
+# probably need to remove build/ when there's stuff for the program to use.
+build/
+node_modules/

@@ -1,0 +1,24 @@
+{
+  "name": "jamp-screeps",
+  "version": "0.0.0",
+  "description": "Jamie P's Screeps poop.",
+  "license": "Unlicense",
+  "private": true,
+  "author": {
+    "name": "Jamie Pflager"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djpflager/screeps.git"
+  },
+  "scripts": {
+    "flow": "flow; test $? -eq 0 -o $? -eq 2",
+    "install": "if not exist '.\\build' mkdir build",
+    "start": "babel --watch=src/ --out-dir=build/"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "flow-bin": "^0.36.0"
+  }
+}
